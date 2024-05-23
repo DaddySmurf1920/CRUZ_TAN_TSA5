@@ -1,29 +1,45 @@
-.card-container {
+body {
+    background-image: url('Backround.jpg');
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.row {
     text-align: center;
-    padding: 10px 0; /* Add padding for better spacing */
+    margin: 20px 0;
 }
 
 .card {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 575px;
     background-color: #fff;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px; /* Adjust margin for spacing between cards */
+    margin: 0 10px;
+    position: relative;
+    background-image: url('Card_Backround.jpg');
+    background-size: cover;
+    border: 3px solid #000;
+    border-radius: 10px;
 }
 
 .card-image img {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 10px 10px 0 0;
 }
 
 .card-details {
     padding: 20px;
-    height: 100%; /* Adjust height for details */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+    height: calc(100% - 160px);
 }
 
 .card-details h2 {
@@ -32,7 +48,6 @@
 }
 
 .card-details .type {
-    background-color: #3498db;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -41,12 +56,16 @@
 }
 
 .card-details .description {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .card-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
     text-align: center;
 }
 
@@ -63,3 +82,12 @@
 .card-button:hover {
     background-color: #2980b9;
 }
+
+.type.normal { background-color: #A8A878; }
+.type.flying { background-color: #A98FF3; }
+.type.poison { background-color: #A040A0; }
+.type.psychic { background-color: #F85888; }
+.type.electric { background-color: #F8D030; }
+.type.fairy { background-color: #EE99AC; }
+.type.ground { background-color: #E0C068; }
+
