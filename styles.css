@@ -14,16 +14,16 @@ body {
     width: 300px;
     height: 575px;
     background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px;
+    margin: 0 10px; 
     position: relative;
     background-image: url('Card_Backround.jpg');
     background-size: cover;
-    border: 3px solid #000;
-    border-radius: 10px;
+    border: 3px solid #000; 
 }
 
 .card-image img {
@@ -35,11 +35,9 @@ body {
 .card-details {
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 3px solid #000;
-    border-radius: 10px;
-    margin: 10px;
-    height: calc(100% - 160px);
+    background-color: rgba(122, 131, 133, 0.284); 
+    border-radius: 0; 
+    height: calc(100% - 160px); 
 }
 
 .card-details h2 {
@@ -58,7 +56,7 @@ body {
 .card-details .description {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
 }
 
 .card-buttons {
@@ -90,4 +88,5 @@ body {
 .type.electric { background-color: #F8D030; }
 .type.fairy { background-color: #EE99AC; }
 .type.ground { background-color: #E0C068; }
+
 
