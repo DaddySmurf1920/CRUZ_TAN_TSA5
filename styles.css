@@ -4,7 +4,7 @@
 }
 
 .card {
-    width: 250px;
+    width: 400px;
     height: 400px;
     background-color: #fff;
     border-radius: 10px;
@@ -16,14 +16,14 @@
 }
 
 .card-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 10px 10px 0 0;
 }
 
 .card-details {
     padding: 20px;
-    height: 40%; /* Adjust height for details */
+    height: 100%; /* Adjust height for details */
 }
 
 .card-details h2 {
@@ -41,7 +41,7 @@
 }
 
 .card-details .description {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
