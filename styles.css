@@ -5,20 +5,31 @@ body {
     padding: 0;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
 .card {
     width: 250px;
-    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin: 0 10px;
 }
 
-.card-image {
-    height: 200px;
-    background-image: url('Card_Background.jpg');
-    background-size: cover;
-    background-position: center;
+.card-image img {
+    width: 100%;
+    height: auto;
 }
 
 .card-content {
