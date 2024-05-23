@@ -1,28 +1,29 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure cards wrap to next line */
+    justify-content: center;
+    padding: 20px;
+}
+
 .card {
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 400px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 20px; /* Increased margin for spacing */
-}
-
-.card-image {
-    height: 60%; /* Adjusted height */
-    overflow: hidden; /* Added to hide any overflow */
+    margin: 10px;
 }
 
 .card-image img {
     width: 100%;
-    height: 100%;
+    height: 50%;
     object-fit: cover;
 }
 
 .card-details {
     padding: 20px;
-    height: 40%; /* Adjusted height */
-    overflow-y: auto;
+    height: 50%; /* Adjusted height */
 }
 
 .card-details h2 {
@@ -31,7 +32,7 @@
 }
 
 .card-details .type {
-    background-color: #3498db;
+    background-color: #3498db; /* Adjusted color */
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -47,7 +48,6 @@
 
 .card-buttons {
     text-align: center;
-    margin-top: 10px; /* Added margin */
 }
 
 .card-button {
