@@ -44,6 +44,8 @@
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 20px;
+    height: calc(100% - 120px); /* Adjusted height */
+    overflow-y: auto; /* Added to enable scrolling if content exceeds container height */
 }
 
 .card-buttons {
