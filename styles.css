@@ -20,6 +20,7 @@ body {
 
 .card {
     width: 250px;
+    height: 350px; /* Adjust the height to fit the image properly */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -27,13 +28,24 @@ body {
     margin: 0 10px;
 }
 
+.card-image {
+    position: relative;
+}
+
 .card-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url('Card_Background.jpg'); /* Add background image for card */
+    background-size: cover;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .card-buttons {
