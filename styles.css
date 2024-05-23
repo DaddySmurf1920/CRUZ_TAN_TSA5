@@ -1,5 +1,6 @@
 .card-container {
     text-align: center;
+    padding: 10px 0; /* Add padding for better spacing */
 }
 
 .card {
@@ -9,9 +10,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 10px;
     display: inline-block;
     vertical-align: top;
+    margin: 0 10px; /* Adjust margin for spacing between cards */
 }
 
 .card-image img {
@@ -22,6 +23,7 @@
 
 .card-details {
     padding: 20px;
+    height: 40%; /* Adjust height for details */
 }
 
 .card-details h2 {
