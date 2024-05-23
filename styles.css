@@ -1,95 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
     background-image: url('Background.jpg');
     background-size: cover;
-    background-position: center;
     margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.9);
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    text-align: center;
-    width: 300px;
-    margin: 10px;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
 }
 
 .card-image {
-    position: relative;
-    width: 100%;
     height: 200px;
     background-size: cover;
     background-position: center;
-}
-
-.card-image img {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .card-content {
     padding: 20px;
 }
 
-.card-content h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
+.card-buttons {
+    margin-top: 10px;
+    text-align: center;
 }
 
-.card-content .type {
+.card-button {
+    padding: 8px 20px;
+    margin: 0 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.type {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
     color: #fff;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
-.card-content .description {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.card-buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
-.card-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #A8A878;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.card-button:hover {
-    background-color: #6d6d4e;
+.description {
+    margin-bottom: 10px;
 }
